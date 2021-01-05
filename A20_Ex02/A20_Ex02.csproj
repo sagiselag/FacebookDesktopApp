@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1E6DE3AA-5462-45F1-9F2F-F097BD0DAE0B}</ProjectGuid>
+    <ProjectGuid>{595729AC-197A-4285-B428-A3F0BF20CB66}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>A20_Ex01</RootNamespace>
@@ -69,11 +69,13 @@
     <Compile Include="Wrapper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Facebook">
-      <HintPath>..\..\..\FBApi\Facebook.dll</HintPath>
+    <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\A20 Ex02 DanBinyamin 205651862\DP_Ex01\bin\Release\Facebook.dll</HintPath>
     </Reference>
-    <Reference Include="FbGraphApiWrapper">
-      <HintPath>..\..\..\FBApi\FbGraphApiWrapper.dll</HintPath>
+    <Reference Include="FbGraphApiWrapper, Version=6.8.0.18, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\A20 Ex02 DanBinyamin 205651862\DP_Ex01\bin\Release\FbGraphApiWrapper.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -94,7 +96,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="A20 Ex03 Sagi Yarin.docx" />
+    <None Include="A20 Ex02 Sagi 201325560 Yarin 205641871.docx" />
     <None Include="Properties\DataSources\FacadeApplication.datasource" />
     <None Include="Resources\facebookLoginBackground.png" />
   </ItemGroup>
@@ -145,7 +147,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\facebookBackground.png" />
-    <None Include="Resources\upanddown.jpg" />
     <Content Include="SubmissionReport.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
